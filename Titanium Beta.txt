@@ -1,0 +1,44 @@
+--this is still in beta! new updates will come soon
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Titanium v1", "Ocean")
+
+--about
+local Tab = Window:NewTab("About")
+local Section = Tab:NewSection("Note From The Dev")
+
+--player
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Player")
+Section:NewSlider("Walk Speed", "Changes how fast you walk.", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("Jump Power", "Changes how high you jump.", 250, 30, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+s
+local Tab = Window:NewTab("Script Hubs")
+local Section = Tab:NewSection("Section Name")
+Section:NewButton("V Hub", "This script hub needs a key system.", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+
+end)
+
+local Section = Tab:NewSection("Section Name")
+Section:NewButton("V H", "This script hub needs a key system.", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+
+end)
+
+--autofarm
+local Tab = Window:NewTab("Auto Farms")
+local Section = Tab:NewSection("Section Name")
+
+--universal
+local Tab = Window:NewTab("Universal")
+local Section = Tab:NewSection("You can use these scripts in any game!")
+Section:NewButton("Owl Hub", "This script is discontinued there will be no updates.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+
+end)
