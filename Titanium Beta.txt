@@ -17,7 +17,7 @@ Section:NewSlider("Jump Power", "Changes how high you jump.", 250, 30, function(
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-s
+
 local Tab = Window:NewTab("Script Hubs")
 local Section = Tab:NewSection("Section Name")
 Section:NewButton("V Hub", "This script hub needs a key system.", function()
