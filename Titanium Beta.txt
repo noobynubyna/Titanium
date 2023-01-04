@@ -1,3 +1,13 @@
+--this is still in beta! new updates will come soon
+--i have officialy added mobile support!
+--https://discord.gg/pExgKANJVP
+
+--support at noobynubynyna@0450
+--NOT FINISHED LOLLLOLOLOLOLOOLOLLOLOLOl
+--END MY SUFFERING PLEASEEEEEEEEEEEEEEE
+
+
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Titanium v1", "Ocean")
 
@@ -16,27 +26,23 @@ Section:NewSlider("Jump Power", "Changes how high you jump.", 250, 30, function(
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-
+s
 local Tab = Window:NewTab("Script Hubs")
-local Section = Tab:NewSection("More script Hubs")
+local Section = Tab:NewSection("Section Name")
 Section:NewButton("V Hub", "This script hub needs a key system.", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
 
 end)
 
+local Section = Tab:NewSection("Section Name")
+Section:NewButton("V H", "This script hub needs a key system.", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+
+end)
 
 --autofarm
 local Tab = Window:NewTab("Auto Farms")
-local Section = Tab:NewSection("Auto Farm")
-
-Section:NewButton("HoHo Hub", "Best with BloxFruits. With mobile support!", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-end)
-
-Section:NewButton("PSX", "ButtonInfo", function()
-    print("Clicked")
-end)
-
+local Section = Tab:NewSection("Section Name")
 
 --universal
 local Tab = Window:NewTab("Universal")
@@ -44,8 +50,4 @@ local Section = Tab:NewSection("You can use these scripts in any game!")
 Section:NewButton("Owl Hub", "This script is discontinued there will be no updates.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 
-end)
-
-Section:NewButton("Admin", "This script is mobile support! Made by NTO.", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TwomadJR/nto/main/admiin"))()
 end)
